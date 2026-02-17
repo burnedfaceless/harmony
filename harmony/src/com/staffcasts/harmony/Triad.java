@@ -13,6 +13,8 @@ public class Triad {
     public Triad(String root, TriadQuality quality) {
         setRoot(root);
         setTriadQuality(quality);
+        setThird();
+        setFifth();
     }
 
     public void setRoot(String root) {
@@ -31,6 +33,10 @@ public class Triad {
             case MAJOR, DIMINISHED -> calculateMinorThird(this.third);
             case MINOR, AUGMENTED -> calculateMajorThird(this.third);
         };
+    }
+
+    public String getChord() {
+        return this.getRoot() + " " + this.getThird() + " " + this.getFifth();
     }
 
     public void setTriadQuality(TriadQuality quality) {
