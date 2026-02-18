@@ -1,3 +1,5 @@
+import com.staffcasts.harmony.SeventhChord;
+import com.staffcasts.harmony.SeventhChordQuality;
 import com.staffcasts.harmony.Triad;
 import com.staffcasts.harmony.TriadQuality;
 
@@ -17,5 +19,9 @@ public class Main {
         Triad cMinor = new Triad("C", TriadQuality.MINOR);
         System.out.println(cMajor.getChord());
         System.out.println(cMinor.getChord());
+        SeventhChord cMajor7 = new SeventhChord("C", SeventhChordQuality.MAJORSEVENTH);
+        SeventhChord cMinor7 = new SeventhChord("C", SeventhChordQuality.MINORSEVENTH);
+        System.out.println(cMajor7.getChord());
+        System.out.println(cMinor7.getChord());
     }
 }
