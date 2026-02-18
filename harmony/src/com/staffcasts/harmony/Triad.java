@@ -39,6 +39,10 @@ public class Triad {
         return this.getRoot() + " " + this.getThird() + " " + this.getFifth();
     }
 
+    public String getQuality() {
+        return this.triadQuality.toString();
+    }
+
     public void setTriadQuality(TriadQuality quality) {
         this.triadQuality = quality;
     }

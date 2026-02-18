@@ -26,6 +26,10 @@ public class SeventhChord extends Triad{
         return super.getChord() + " " + this.getSeventh();
     }
 
+    @Override
+    public String getQuality() {
+        return this.seventhChordQuality.toString();
+    }
 
     protected void setSeventhChordQuality(SeventhChordQuality seventhChordQuality) {
         this.seventhChordQuality = seventhChordQuality;
